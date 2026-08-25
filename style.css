@@ -1,0 +1,240 @@
+/* Temel Sıfırlama */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+body {
+  background-color: aliceblue;
+  color: darkslategray;
+}
+/* Header & Navbar Hizalama */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* yatay da hizalama*/
+  padding: 1rem 3rem;
+  background-color: white;
+  border-bottom: 3px solid lightgray;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: rgb(119, 29, 13);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: slategray;
+  font-weight: 500;
+  transition: color 0.02 ease;
+}
+/*Hero Ana Kapsayıcı (iki kolonlu yerleşim)*/
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+/*Sol taraf metin alanı*/
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: slategray;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+/*Buton tasarımı*/
+.hero-btn {
+  display: inline-block;
+  background-color: royalblue;
+  color: white;
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition:
+    transform 0.02s ease,
+    background-color 0.02s ease;
+}
+.hero-btn:hover {
+  background-color: darkblue;
+  transform: translateY(-2px);
+}
+/*Sağ taraf önizleme kartı*/
+.hero-card {
+  flex: 1;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10 px 30px rgba(0, 0, 0, 0, 08);
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.card-badge {
+  display: inline-block;
+  background-color: honeydew;
+  color: seagreen;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-timer {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+/* Kart içindeki yol çizgisi*/
+.card-track {
+  background-color: gainsboro;
+  height: 8px;
+  border-radius: 4px;
+  position: realtive;
+  margin: 2rem 0 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-dog {
+  font-size: 1.6rem;
+  transform: translateY(-9px);
+}
+
+.card-tree {
+  font-size: 1.6rem;
+  transform: translateY(-9px);
+}
+
+.card-info {
+  font-size: 0.9rem;
+  color: slategray;
+}
+/*Özellikler Bölümü*/
+.features-section {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+/* Başlık ve açıklama metni*/
+.features-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+.features-header p {
+  color: slategray;
+  font-size: 1.1rem;
+}
+/* 3 Kartı yan yana dizme*/
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 eşit sütün oluşturur*/
+  gap: 2rem; /* kartların arasına 2 rem boşluk koyar*/
+}
+/* Tekil kart tasarımı*/
+.feature-card {
+  background-color: white;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  text-align: center;
+  transition: transform 0.02s ease;
+}
+/* kartın üzerine gelince hafif yukarı kayması*/
+.feature-card-hover {
+  transform: translateY(-5px);
+}
+/* kart içindeki ikon, başlık ve yazılar*/
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.08rem;
+}
+.feature-card p {
+  color: slategray;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+/* NASIL ÇALIŞIR BÖLÜMÜ*/
+.how-section {
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+/* Adımı yan yana dizme */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.step-card {
+  background-color: white;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  text-align: center;
+  transition: transform 0.02 ease;
+}
+.step-card:hover {
+  transform: translateY(-5px);
+}
+/* Yuvarlak mavi adım numaraları (1,2,3) */
+.step-number {
+  width: 45px;
+  height: 45px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 1.2rem auto;
+}
+.step-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.step-card p {
+  font-size: 1.2rem;
+  margin-bottom: 0.08rem;
+}
+.step-card p {
+  color: slategray;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Walk Timer - Uygulama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">🐾 PetWalk🐾</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Ana Sayfaya Dön</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Canlı Uygulama Alanı-->
+    <main class="app-container">
+      <div class="app-card">
+        <div class="app-header">
+          <h2>🐾 Yürüyüş Zamanı</h2>
+          <p id="status-text">Odaklanma oturumunu başlatmaya hazırsın!</p>
+        </div>
+        <!--Büyük sayaç ekranı-->
+        <div class="timer-display" id="timer">25:00</div>
+
+        <!--Hareketli parkur alanı-->
+        <div class="interactive-track">
+          <div class="dog-runner" id="dog-runner">🐕</div>
+          <div class="park-target">🌳</div>
+        </div>
+
+        <!--Kontrol Butonları-->
+        <div class="controls-butons">
+          <button id="start-btn" class="btn btn-start">Başlat</button>
+          <button id="pause-btn" class="btn btn-pause">Duraklat</button>
+          <button id="reset-btn" class="btn btn-reset">Sıfırla</button>
+        </div>
+        <!--Ödül Sayacı-->
+        <div class="rewards-area">
+          <span>Kazanılan Ödüller: </span>
+          <span id="bone-cout">🦴 x 0</span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

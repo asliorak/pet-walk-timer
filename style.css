@@ -124,6 +124,7 @@ body {
 .card-dog {
   font-size: 1.6rem;
   transform: translateY(-9px);
+  transform: scaleX(-1);
 }
 
 .card-tree {
@@ -237,4 +238,109 @@ body {
   color: slategray;
   line-height: 1.6;
   font-size: 0.95rem;
+}
+/* Uygulama Ekranı Hizalama */
+
+.app-container {
+  max-width: 750px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.app-card {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 24px;
+  text-align: center;
+}
+.app-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.05rem;
+  color: rgb(121, 35, 35);
+}
+.app-header p {
+  color: slategray;
+  font-size: 1rem;
+}
+/*Sayacı daha büyük ve dikkat çekici yapmak için*/
+.timer-display {
+  font-size: 4rem;
+  font-weight: 800px;
+  letter-spacing: 2px;
+  color: black;
+  margin: 1rem 0 1.5rem 0;
+}
+/*Büyük Sayaç Yazısı */
+.interactive-track {
+  background-color: gainsboro;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+  margin: 3rem 1.5rem 3rem 1.5rem;
+}
+.dog-runner {
+  font-size: 2.2rem;
+  position: absolute;
+  left: 0%; /* köpek en soldan başlar*/
+  top: -18px;
+  transform: scaleX(-1); /* köpeğin yüzünü sağ tarafa çevirir*/
+  transition: left 0.5s ease;
+}
+.park-target {
+  font-size: 2.2rem;
+  position: absolute;
+  right: 0;
+  top: -16px;
+}
+/*Buton Düzenleri*/
+.controls-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.01s ease,
+    opacity 0.2s ease;
+}
+.btn-active {
+  transform: scale(0.95);
+}
+.btn-start {
+  background-color: royalblue;
+  color: white;
+}
+.btn-start:hover {
+  opacity: 0.29;
+}
+.btn-pause {
+  background-color: gold;
+  color: black;
+}
+.btn-pause:hover {
+  opacity: 0.29;
+}
+.btn-reset {
+  background-color: whitesmoke;
+  color: slategray;
+  border: 1px solid lightgray;
+}
+.btn-reset:hover {
+  background-color: gainsboro;
+}
+/*Ödül Rozeti*/
+.rewards-area {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: royalblue;
+  background-color: aliceblue;
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
 }

@@ -344,3 +344,43 @@ body {
   padding: 0.7rem 1.8rem;
   border-radius: 30px;
 }
+.time-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.time-btn {
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  padding: 0.4rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: slategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.time-btn :hover {
+  background-color: #e2e8f0;
+}
+.time-btn.active {
+  background-color: royalblue;
+  color: white;
+  border-color: royalblue;
+}
+.custom-time-box {
+  display: flex;
+  gap: 0.3rem;
+}
+.custom-time-box input {
+  width: 80px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+  font-size: 0.85rem;
+  text-align: center;
+}

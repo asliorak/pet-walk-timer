@@ -23,6 +23,21 @@
           <h2>🐾 Yürüyüş Zamanı</h2>
           <p id="status-text">Odaklanma oturumunu başlatmaya hazırsın!</p>
         </div>
+        <div class="time-options">
+          <button class="time-btn" data-time="15">15 Dk</button>
+          <button class="time-btn" data-time="30">30 Dk</button>
+          <button class="time-btn" data-time="45">45 Dk</button>
+          <div class="custom-time-box">
+            <input
+              type="number"
+              id="custom-minutes"
+              placeholder="Özel (dk)"
+              min="1"
+              max="180"
+            />
+            <button id="set-custom-btn" class="time-btn">Ayarla</button>
+          </div>
+        </div>
         <!--Büyük sayaç ekranı-->
         <div class="timer-display" id="timer">25:00</div>
 

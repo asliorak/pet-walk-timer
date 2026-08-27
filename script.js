@@ -1,6 +1,6 @@
 // Sayfadaki elemanları değiişkenlere atıyoruz
 const timerDisplay = document.getElementById("timer");
-const statuesText = document.getElementById("statues-text");
+const statusText = document.getElementById("status-text");
 const startBtn = document.getElementById("start-btn");
 const pauseBtn = document.getElementById("pause-btn");
 const resetBtn = document.getElementById("reset-btn");
@@ -8,11 +8,11 @@ const dogRunner = document.getElementById("dog-runner");
 const boneCountDisplay = document.getElementById("bone-count");
 
 // Zaman ve durum değişkenleri
-const TOTAL_TIME = 25 * 60; // 25 dakika = 1500 saniye
+const TOTAL_TIME = 5; //25 * 60; // 25 dakika = 1500 saniye
 let timeLeft = TOTAL_TIME; // kalan saniye
 let timerInterval = null; // Zaman sayacını çalıştırıcak saat mekanizmaası
 let isRunning = false; //Sayaç şuan akıyor mu
-let complateWalks = 0; //kazanılan ödül kemiği sayısı
+let completedWalks = 0; //kazanılan ödül kemiği sayısı
 
 function updateDisplay() {
   const minutes = Math.floor(timeLeft / 60); //kalan dakikayı bul
@@ -30,7 +30,7 @@ function updateDogPosition() {
   const progress = (TOTAL_TIME - timeLeft) / TOTAL_TIME;
   const currentPosition = progress * 90; // Ağacın tam üstüne binmesin diye maax %90
 
-  dogRunner.style.left = "${currentPosition}%";
+  dogRunner.style.left = `${currentPosition}%`;
 }
 // Başlat butonuna basılınca
 function startTimer() {
@@ -52,7 +52,7 @@ function startTimer() {
       completedWalks++; // Kemik sayısını 1 artır
 
       statusText.textContent = "Tebrikler! Köpeğin parka vardı";
-      boneCountDisplay.textContent = "x ${completedWalks}";
+      boneCountDisplay.textContent = `🦴 x ${completedWalks}`;
       alert("Harika bir odaklanma seansı! Köpeğin parka ulaştı");
     }
   }, 1000);

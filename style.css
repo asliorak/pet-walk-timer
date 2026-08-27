@@ -281,7 +281,7 @@ body {
   font-size: 2.2rem;
   position: absolute;
   left: 0%; /* köpek en soldan başlar*/
-  top: -18px;
+  top: -26px;
   transform: scaleX(-1); /* köpeğin yüzünü sağ tarafa çevirir*/
   transition: left 0.5s ease;
 }
@@ -289,7 +289,7 @@ body {
   font-size: 2.2rem;
   position: absolute;
   right: 0;
-  top: -16px;
+  top: -26px;
 }
 /*Buton Düzenleri*/
 .controls-buttons {

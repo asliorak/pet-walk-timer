@@ -384,3 +384,162 @@ body {
   font-size: 0.85rem;
   text-align: center;
 }
+
+@media (max-width: 760px) {
+  .features-grid,
+  .steps-grid,
+  .cards-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    align-items: center;
+  }
+
+  .feature-card,
+  .step-card,
+  .card {
+    width: 100% !important;
+    max-width: 320px;
+    box-sizing: border-box;
+  }
+}
+.park-builder-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.park-builder-section .section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.badge {
+  background-color: aliceblue;
+  color: royalblue;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+.park-builder-section h2 {
+  font-size: 2.2rem;
+  color: darkslategray;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+.park-buikder-section p {
+  color: dimgray;
+  font-size: 1.05rem;
+  text-align: center;
+}
+.park-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.park-card {
+  background: white;
+  border: 1px solid whiitesmoke;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  position: relative;
+}
+.park-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0, 08);
+}
+.paark-card.featured {
+  border: 2px solid orange;
+  background: ivory;
+}
+
+.park-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: gray;
+  background: ghostwhite;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+.park-badge.gold {
+  background: cornsilk;
+  color: darkgoldenrod;
+}
+/*İkonşar*/
+.park-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.park-card h3 {
+  font-size: 1.2rem;
+  color: darkslategray;
+  margin-bottom: 0.6rem;
+}
+.reward-tag {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: snow;
+  border: 1px solid lightgray;
+  padding: 0.35rem 0.9rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: dimgray;
+}
+/*Kural Kutuları*/
+.gamification-rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.rule-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+}
+
+.rule-box.success {
+  background-color: honeydew;
+  border: 1px solid lightgreen;
+}
+
+.rule-box.danger {
+  background-color: floralwhite;
+  border: 1px solid bisque;
+}
+
+.rule-icon {
+  font-size: 2.2rem;
+}
+
+.rule-box h4 {
+  margin: 0 0 0.25rem 0;
+  color: darkslategray;
+}
+
+.rule-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: dimgray;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .park-grid,
+  .gamification-rules {
+    grid-template-columns: 1fr;
+  }
+}
